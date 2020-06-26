@@ -19,7 +19,7 @@ export default function FilterProducts() {
                                 {/**Text search */}
                                 <div>
                                     <label htmlFor = "search"> Search products:</label>
-                                    <input type= "text" name = "search" onChange = {handleChange} value={search} className = "filter-item"></input>
+                                    <input type= "text" id="search" name = "search" onChange = {handleChange} value={search} className = "filter-item"></input>
                                 </div>
                                  {/** end ofText search */}
                                  {/**category search */}

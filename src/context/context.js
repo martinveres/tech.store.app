@@ -23,7 +23,7 @@ class ProductProvider extends Component {
         price: 0,
         max: 0,
         min: 0,
-        company: '',
+        company: 'all',
         shipping: false
     }
     componentDidMount() {
@@ -48,7 +48,8 @@ class ProductProvider extends Component {
                         singleProduct: this.getStorageProduct(),
                         loading:false,
                         price:maxPrice,
-                        max: maxPrice
+                        max: maxPrice,
+                        
         } , () => {
             this.addTotals();
         })  
@@ -251,6 +252,7 @@ class ProductProvider extends Component {
                  if(tempSearch===tempTitle) {
                      return item;
                  }
+                 
              })
          }
           
