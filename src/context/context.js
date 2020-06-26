@@ -243,6 +243,7 @@ class ProductProvider extends Component {
              tempProducts = tempProducts.filter(item=> item.freeShipping === true)
          }
          //filtering based on search
+         /**
          if(search.length > 0) {
              tempProducts = tempProducts.filter(item=> {
                  let tempSearch = search.toLowerCase();
@@ -252,8 +253,10 @@ class ProductProvider extends Component {
                  }
              })
          }
+          */
          this.setState({filterProducts: tempProducts}); 
     }
+
     render() {
         return (
         <ProductContext.Provider value = {{
